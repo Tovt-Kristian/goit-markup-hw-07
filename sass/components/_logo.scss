@@ -1,0 +1,17 @@
+.logo {
+  font-family: var(--secondary-font);
+  @include font(700, 26px, 31px, 0.03em);
+  &__accent-text {
+    color: var(--accent-color);
+  }
+
+  &_theme {
+    &_light {
+      color: var(--logo-color);
+      margin-right: 93px;
+    }
+    &_dark {
+      color: var(--secondary-color);
+    }
+  }
+}
